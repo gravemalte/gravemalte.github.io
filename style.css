@@ -1,0 +1,205 @@
+/*
+ * This CSS file is based on https://ryan.freumh.org/ all credits to him.
+ * I modfied it and improved the responsiveness.
+ */
+
+:root {
+    --text-color: #222;
+    --link-color: #0BDA51;
+    --link-hover-color: #228B22;
+    --footer-color: #777;
+    --content-width: 720px;
+}
+
+body {
+    font-family: "Noto Sans", "Notto Sans manual", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-stretch: normal;
+    margin: 0;
+    padding: 0;
+    overflow-wrap: break-word;
+}
+
+header, footer {
+    padding: 1rem 2em;
+    text-align: center;
+}
+
+footer p {
+    color: var(--footer-color);
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+}
+
+header nav,
+main,
+footer {
+    max-width: var(--content-width);
+    margin: 2rem auto;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+
+
+p {
+    text-align: justify;
+}
+
+h1, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0.5rem 1em;
+    align-items: center;
+}
+
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    flex: 0 1 auto;
+    padding-right: 2em;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration-skip-ink: auto;
+    text-decoration-color: var(--link-color);
+    text-decoration-thickness: 1.5px;
+}
+
+a:hover {
+    text-decoration-color: var(--link-hover-color);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+.post-title {
+    font-size: 1.1rem;
+    flex-shrink: 1;
+}
+
+.date {
+    font-size: 0.85rem;
+    white-space: nowrap;
+    margin-left: 1rem;
+    flex-shrink: 0;
+}
+
+.page-date {
+    float: right;
+}
+
+
+figure {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.inline {
+    float: right;
+    margin: 0 0 1em 1em;
+    text-align: center;
+}
+
+figure.inline img {
+    width: 200px;
+}
+
+
+blockquote {
+    font-style: italic;
+    padding: 0 10px;
+    margin: 0 0 20px;
+    border-left: 10px solid var(--blockquote-color);
+    color: var(--text-color);
+}
+
+.anchor {
+    color: var(--link-color);
+    text-decoration: none !important;
+    display: inline-block;
+    width: 1ex;
+    margin-left: -1ex;
+}
+
+.footnote-back {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.footnote-back:hover {
+    color: var(--text-color);
+}
+
+.footnote-ref {
+    text-decoration: none;
+}
+
+.footnote-ref sup {
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: var(--link-color);
+    text-decoration-thickness: 1.5px;
+}
+
+.footnote-ref sup:hover {
+    text-decoration-color: var(--link-hover-color);
+}
+
+ul, ol {
+    padding-inline-start: 2em;
+}
+
+a:link {
+    text-decoration-line: underline;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: var(--link-color);
+    text-decoration-thickness: 1.5px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.posts li {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
